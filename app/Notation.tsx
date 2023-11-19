@@ -13,7 +13,7 @@ const Notation = ({ notation }: NotationProps) => {
 
   useEffect(() => {
     abcjs.renderAbc(notationId, notation);
-  }, [notation, notationId]); // Added notation and notationId as dependencies
+  }, [notation, notationId]);
 
   return <div id={notationId} className="notation max-w-xs" data-notation={notation}></div>;
 }
