@@ -1,3 +1,5 @@
+import Notation from './Notation';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
@@ -11,13 +13,10 @@ export default function Home() {
         <p className="mt-4">If you have suggestion for this list, please email <a href="mailto:help@popularchords.com">help@popularchords.com</a></p>
       </div>
 
-      <div className="flex mt-6 progression justify-between">
-        <div>
-          <h2>The &quot;Journey&quot; Progression</h2>
+      <div className="flex mt-8 progression justify-between max-w-xl text-center flex-col items-center">
+        <h2 className="text-xl">The &quot;Journey&quot; Progression (I - V - vi - IV)</h2>
 
-          <p>I - V - vi - IV</p>
-        </div>
-        <div>Music</div>
+        <Notation notation={'X:1\nK:C\n"C"[c4e4g4]"G"[g,4b,4d4]"Am"[a,4c4e4]"F"[f,4a,4c4]\n'} />
       </div>
     </main>
   )
