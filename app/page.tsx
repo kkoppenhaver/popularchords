@@ -10,7 +10,7 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center flex-col justify-center text-sm lg:flex mt-4 max-w-md text-center">
         <p>If you&apos;re looking for some common chord progressions to use in your improvization or just to make yourself a more versatile musician, look no further! Below you&apos;ll find various progressions, able to be transposed into any key, with the accompanying sheet music and songs where this progression is featured.</p>
 
-        <p className="mt-4">If you have suggestion for this list, please email <a href="mailto:help@popularchords.com">help@popularchords.com</a></p>
+        <p className="mt-4">If you have suggestion for this list, please email <a href="mailto:help@popularchords.com">help@popularchords.com</a>. And if you want to do even more exploring with progressions, you can see which songs have a certain progression at <a href="https://www.hooktheory.com/trends">Hooktheory.com</a></p>
       </div>
 
       <div className="flex mt-8 progression justify-between max-w-xl text-center flex-col items-center">
@@ -37,9 +37,9 @@ export default function Home() {
         <h3 className="text-lg mt-4">Examples</h3>
 
         <a href="https://www.youtube.com/watch?v=htOTukXy84E">She's Everything, Brad Paisley</a> 
-        <a href="https://www.youtube.com/watch?v=en2D_5TzXCA">Million Reasons, Laday Gaga</a>
+        <a href="https://youtu.be/en2D_5TzXCA?si=tOQMPA35WBWbyTRf&amp;t=58">Million Reasons, Laday Gaga</a>
         <a href="https://www.youtube.com/watch?v=fV4DiAyExN0">The Reason, Hoobastank</a>
-        <small>(doesn't do the progression directly, but it's the same idea)</small>
+        <small>(doesn't do the progression exactly because it has an<br />extra return to the I, but it's the same idea)</small>
       </div>
 
       <div className="flex mt-8 progression justify-between max-w-xl text-center flex-col items-center">
@@ -60,8 +60,8 @@ export default function Home() {
         <h3 className="text-lg mt-4">Examples</h3>
 
         <a href="https://www.youtube.com/watch?v=PgRafRp-P-o">Walking in Memphis, Marc Cohn</a> 
-        <a href="https://www.youtube.com/watch?v=WziA88-n02k">Unwell, Matchbox Twenty (in the verse)</a>
-        <a href="https://www.youtube.com/watch?v=AOPMlIIg_38">Boom Clap, Charli XCX</a>
+        <a href="https://youtu.be/WziA88-n02k?si=Yem7NEnkp7s7RYwv&amp;t=21">Unwell, Matchbox Twenty (in the verse)</a>
+        <a href="https://youtu.be/AOPMlIIg_38?si=u0w6tjXTeuWL6LuI&amp;t=34">Boom Clap, Charli XCX</a>
       </div>
     </main>
   )
