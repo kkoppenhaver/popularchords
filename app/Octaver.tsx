@@ -1,15 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 
-const Octaver = ({ onSliderChange }) => {
+// Define a type for the props
+type OctaverProps = {
+    onSliderChange: (value: number) => void,
+    classes: string;
+};
+
+const Octaver = ({ onSliderChange }: OctaverProps) => {
   const octaveValues = [-1, 0, 1];
   const [sliderValue, setSliderValue] = useState(1);
 
-  const handleChange = (event) => {
-      const newValue = event.target.value;
-      setSliderValue(newValue);
-      onSliderChange(octaveValues[newValue]);
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    // Convert the value to a number
+    const newValue = parseInt(event.target.value, 10);
+    setSliderValue(newValue);
+    onSliderChange(octaveValues[newValue]);
   };
 
   return (

@@ -10,11 +10,11 @@ export default function Home() {
   const [transposeSteps, setTransposeSteps] = useState(0);
   const [octave, setOctave] = useState(0);
 
-  const onTranspose = (steps) => {
+  const onTranspose = (steps: number) => {
     setTransposeSteps(steps);
-  }
+  };
 
-  const onOctave = (newOctave) => {
+  const onOctave = (newOctave: number) => {
     setOctave(newOctave);
   }
 
