@@ -2,6 +2,7 @@
 
 import Notation from './Notation';
 import Transposer from './Transposer';
+import Octaver from './Octaver';
 
 import { useState } from 'react';
 
@@ -11,6 +12,10 @@ export default function Home() {
 
   const onTranspose = (steps) => {
     setTransposeSteps(steps);
+  }
+
+  const onOctave = (newOctave) => {
+    setOctave(newOctave);
   }
 
   return (
@@ -23,11 +28,18 @@ export default function Home() {
         <p>If you&apos;re looking for some common chord progressions to use in your improvization or just to make yourself a more versatile musician, look no further! Below you&apos;ll find various progressions, able to be transposed into any key, with the accompanying sheet music and songs where this progression is featured.</p>
 
         <p className="mt-4">If you have suggestion for this list, please email <a href="mailto:help@popularchords.com">help@popularchords.com</a>. And if you want to do even more exploring with progressions, you can see which songs have a certain progression at <a href="https://www.hooktheory.com/trends">Hooktheory.com</a> and refer to your chord book and circle of fifths tool!</p>
-      
-        <h3 className="mt-8 text-xl">Transpose</h3>
-        <p className="mt-2 text-sm mb-2">To transpose the examples into a different key, use this slider.</p>
 
-        <Transposer classes="w-2/3" onSliderChange={onTranspose} />
+        <div className="flex w-full mt-6">
+          <div className="w-1/2 flex-wrap flex flex-col items-center">
+            <small>Transpose</small>
+            <Transposer classes="w-2/3" onSliderChange={onTranspose} />
+          </div>
+
+          <div className="w-1/2 flex-wrap flex flex-col items-center">
+            <small>Octave</small>
+            <Octaver classes="w-2/3" onSliderChange={onOctave} />
+          </div>
+        </div>
       </div>
 
       <div className="flex mt-8 progression justify-between max-w-xl text-center flex-col items-center">
