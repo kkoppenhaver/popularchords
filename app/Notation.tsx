@@ -22,7 +22,7 @@ const Notation = ({ notation, width, steps, octave }: NotationProps) => {
     let visualObj = abcjs.renderAbc(notationId, newNotation);
     let updatedNotation = abcjs.strTranspose(newNotation, visualObj, steps);
     abcjs.renderAbc(notationId, updatedNotation);
-  }, [notation, notationId, steps, octave]);
+  }, [notation, notationId, steps, octave, newNotation]);
 
   return <div data-steps={steps} id={notationId} data-octave={octave} className="notation max-w-xs" style={{maxWidth: width}}></div>;
 }
