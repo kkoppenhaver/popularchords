@@ -2,16 +2,7 @@
 
 import { useEffect, useId } from 'react';
 import abcjs from 'abcjs';
-
-// Define the types for your component's props
-interface NotationProps {
-  notation: string;
-  width: string;
-  steps: number;
-  octave: number;
-}
-
-const Notation = ({ notation, width, steps, octave }: NotationProps) => {
+const Notation = ({ notation, width, steps, octave }) => {
   const notationId = useId();
   const octaveRegex = /(K:C octave=)\d+/;
 
