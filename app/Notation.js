@@ -2,6 +2,7 @@
 
 import { useEffect, useId } from 'react';
 import abcjs from 'abcjs';
+
 const Notation = ({ notation, width, steps, octave }) => {
   const notationId = useId();
   const octaveRegex = /(K:C octave=)\d+/;

@@ -8,7 +8,7 @@ type TransposerProps = {
 };
 
 const Transposer = ({ onSliderChange, classes }: TransposerProps) => {
-  const keyValues = ['F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B', 'C', 'C#/Db', 'D', 'D#Eb', 'E', 'F', 'F#/Gb'];
+  const keyValues = ['F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B', 'C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb'];
   const [sliderValue, setSliderValue] = useState(6);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
