@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-center text-sm lg:flex">
+      <div className="z-10 max-w-5xl w-full items-center justify-center text-sm lg:flex text-center">
         <h1 className="text-4xl">Popular Chords</h1>
       </div>
 
@@ -30,12 +30,12 @@ export default function Home() {
         <p className="mt-4">If you have suggestion for this list, please email <a href="mailto:help@popularchords.com">help@popularchords.com</a>. And if you want to do even more exploring with progressions, you can see which songs have a certain progression at <a href="https://www.hooktheory.com/trends">Hooktheory.com</a> and refer to your chord book and circle of fifths tool!</p>
 
         <div className="flex w-full mt-6">
-          <div className="w-1/2 flex-wrap flex flex-col items-center">
+          <div className="w-1/2 flex-wrap flex flex-col items-center print:hidden">
             <small>Transpose</small>
             <Transposer classes="w-2/3" onSliderChange={onTranspose} />
           </div>
 
-          <div className="w-1/2 flex-wrap flex flex-col items-center">
+          <div className="w-1/2 flex-wrap flex flex-col items-center print:hidden">
             <small>Octave</small>
             <Octaver classes="w-2/3" onSliderChange={onOctave} />
           </div>
