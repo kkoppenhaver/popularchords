@@ -72,9 +72,9 @@ export default function Home() {
       </div>
 
       <div className="flex mt-8 progression justify-between max-w-xl text-center flex-col items-center">
-        <h2 className="text-xl">Deceptive Cadence (I - iv - IV - V - vi - V - I)</h2>
+        <h2 className="text-xl">Deceptive Cadence (I - iv - IV - V - vi)</h2>
 
-        <Notation steps={transposeSteps} octave={octave} notation={'X:1\nK:C octave=0\n"C"[c4e4g4]"Am"[a,4c4e4]"F"[f,4a,4c4]"G"[g,4b,4d4]"Am"[a,4c4e4]"G"[g,4b,4d4]"C"[c4e4g4]'} width="30rem" />
+        <Notation steps={transposeSteps} octave={octave} notation={'X:1\nK:C octave=0\n"C"[c4e4g4]"Am"[a,4c4e4]"F"[f,4a,4c4]"G"[g,4b,4d4]"Am"[a,4c4e4]'} width="30rem" />
 
         <p className="mt-4">Similar to the walk down progression, but useful in most any progression really, when you have a V chord (G in the key of C for example) and you&apos;re not quite ready to end the progression, you can move it up to the vi (Am in the key of C). Because everyone expects the V chord to resolve to the I, this is considered &quot;deceptive&quot;.</p>
       </div>
